@@ -24,7 +24,7 @@ class LinkedList {
   ~LinkedList();
   void Add(const string& value);
   Node* Head() const;
-  void Print() const;
+  Node* Find(const string& value) const;
  private:
   Node* head_;
 };

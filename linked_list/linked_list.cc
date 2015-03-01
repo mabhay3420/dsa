@@ -55,12 +55,15 @@ Node* LinkedList::Head() const {
   return head_;
 }
 
-void LinkedList::Print() const {
+Node* LinkedList::Find(const string& value) const {
   Node* cur = head_;
   while (cur != nullptr) {
-    std::cout << cur->value() << std::endl;
+    if (value == cur->value()) {
+      return cur;
+    }
     cur = cur->next();
   }
+  return nullptr;
 }
 
 }  // dsa

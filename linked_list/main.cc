@@ -1,3 +1,4 @@
+#include <assert.h>
 #include "linked_list.h"
 
 int main() {
@@ -6,6 +7,8 @@ int main() {
   linked_list.Add("apple");
   linked_list.Add("amazon");
   linked_list.Add("google");
-  linked_list.Print();
+  assert(linked_list.Find("microsoft") != nullptr);
+  assert(linked_list.Find("google") != nullptr);
+  assert(linked_list.Find("facebook") == nullptr);
   return 0;
 }
