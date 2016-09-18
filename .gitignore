@@ -27,6 +27,5 @@
 *.out
 *.app
 
-# Others
+*.DS_Store
 *.swp
-
