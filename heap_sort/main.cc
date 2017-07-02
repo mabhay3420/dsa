@@ -45,8 +45,8 @@ void HeapSort(std::vector<T>& v) {
 }  // namespace
 
 int main() {
-	std::vector<int> v{2, 100, 3, 0, 1, 100, -1, 2};
-	HeapSort(v);
-	for (int v_i : v) cout << v_i << endl;
-	return 0;
+  std::vector<int> v{2, 100, 3, 0, 1, 100, -1, 2};
+  HeapSort(v);
+  for (int v_i : v) cout << v_i << endl;
+  return 0;
 }
