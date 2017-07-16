@@ -25,8 +25,8 @@ std::unique_ptr<Node> Add(Node* a, Node* b) {
   int a_val, b_val, total, cur_sum;
   int cur_carry = 0;
   while (a != nullptr || b != nullptr) {
-  	a_val = (a == nullptr) ? 0 : a->value;
-  	b_val = (b == nullptr) ? 0 : b->value;
+    a_val = (a == nullptr) ? 0 : a->value;
+    b_val = (b == nullptr) ? 0 : b->value;
 
     total = (a_val + b_val + cur_carry);
     cur_sum = total % 10;
@@ -43,7 +43,7 @@ std::unique_ptr<Node> Add(Node* a, Node* b) {
     if (b != nullptr) b = b->next.get();
   }
   if (cur_carry > 0) {
-  	cur_node->next.reset(new Node(cur_carry));
+    cur_node->next.reset(new Node(cur_carry));
   }
   return std::move(output);
 }
