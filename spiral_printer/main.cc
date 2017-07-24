@@ -63,7 +63,7 @@ int main() {
     {"M", "X", "I"},
     {"L", "K", "J"}
   };
-  cout << "case 2: "<< endl;
+  cout << "case 2: " << endl;
   PrintSpiral(grid);
   return 0;
 }
